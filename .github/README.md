@@ -110,7 +110,7 @@ leiblog/
 
 ### 创建新文章
 
-1. 在 `blog/articles/` 目录下创建 `.md` 文件
+1. 在 `blog/articles/lists` 目录下创建 `.md` 文件
 2. 添加 frontmatter 元数据：
 
 ```yaml
