@@ -15,8 +15,15 @@ export default defineConfig({
   vite: {
     plugins: [
       GitChangelog({
-        // 填写您的仓库链接
         repoURL: () => 'https://github.com/TL2005/leiblog',
+        mapAuthors: [
+          {
+            name: 'taolei',
+            username: 'TL2005',
+            mapByNameAliases: ['TL2005', 'taolei'],
+            mapByEmailAliases: ['taolei@outlook.sg'], // 替换为你的实际邮箱
+          }
+        ]
       }),
       GitChangelogMarkdownSection(),
     ],
