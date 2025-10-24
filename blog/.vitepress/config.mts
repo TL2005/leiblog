@@ -12,7 +12,7 @@ export default defineConfig({
   title: "leiblog",
   description: "lei的技术博客",
   head: [
-    ['link',{ rel: 'icon', href: '/logo.png'}],
+    ['link',{ rel: 'icon', href: 'https://pic.imgdd.cc/item/68f4d03945440b5a918e36dc.png'}],
   ],
   lastUpdated: true, //首次配置不会立即生效，需git提交后爬取时间戳
   markdown: {
@@ -23,7 +23,7 @@ export default defineConfig({
   },
   themeConfig: {
     //左上角logo
-    logo: '/logo.png',
+    logo: 'https://pic.imgdd.cc/item/68f4d03945440b5a918e36dc.png',
     darkModeSwitchLabel: '深浅模式', 
     sidebarMenuLabel:'目录', 
     returnToTopLabel:'返回顶部', 
