@@ -17,4 +17,4 @@ blog/.vitepress/cache
 Thumbs.db
 
 # IntelliJ IDEA
-blog/.idea
+.idea
