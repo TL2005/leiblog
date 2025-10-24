@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# VitePress build output
+blog/.vitepress/dist
+blog/.vitepress/cache
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IntelliJ IDEA
+blog/.idea

@@ -1,0 +1,136 @@
+/* var.css */
+/**
+ * 自定义淡紫色主题
+ * -------------------------------------------------------------------------- */
+
+/* 亮色模式 */
+:root {
+  /* 
+    品牌色 - 淡紫色
+    -1: 用于链接、文本 hover 等最突出的颜色
+    -2: 用于按钮 hover 状态
+    -3: 用于按钮的背景色
+    -soft: 用于容器、徽章等柔和的背景色
+  */
+  --vp-c-brand-1: #6b21a8; /* 深紫色，确保在白色背景上清晰可读 */
+  --vp-c-brand-2: #8b5cf6; /* 中等紫色，用于交互状态 */
+  --vp-c-brand-3: #a78bfa; /* 浅紫色，用于按钮背景，与白色文字对比良好 */
+  --vp-c-brand-soft: rgba(139, 92, 246, 0.14); /* 非常浅的紫色背景 */
+
+  /* 因为 tip, note 等颜色默认继承 brand，所以它们也会自动变成紫色 */
+  --vp-c-tip-1: var(--vp-c-brand-1);
+  --vp-c-tip-2: var(--vp-c-brand-2);
+  --vp-c-tip-3: var(--vp-c-brand-3);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
+
+  --vp-c-note-1: var(--vp-c-brand-1);
+  --vp-c-note-2: var(--vp-c-brand-2);
+  --vp-c-note-3: var(--vp-c-brand-3);
+  --vp-c-note-soft: var(--vp-c-brand-soft);
+}
+
+/* 暗色模式 */
+.dark {
+  /* 
+    品牌色 - 淡紫色
+    在暗色背景下，颜色需要更亮一些才能突出显示
+  */
+  --vp-c-brand-1: #c4b5fd; /* 亮紫色，用于深色背景上的文本和链接 */
+  --vp-c-brand-2: #a78bfa; /* 中等亮紫色，用于交互状态 */
+  --vp-c-brand-3: #7c3aed; /* 较深的紫色，用于按钮背景 */
+  --vp-c-brand-soft: rgba(196, 181, 253, 0.16); /* 亮紫色的柔和背景 */
+
+  /* 同样更新 tip 和 note 的颜色 */
+  --vp-c-tip-1: var(--vp-c-brand-1);
+  --vp-c-tip-2: var(--vp-c-brand-2);
+  --vp-c-tip-3: var(--vp-c-brand-3);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
+
+  --vp-c-note-1: var(--vp-c-brand-1);
+  --vp-c-note-2: var(--vp-c-brand-2);
+  --vp-c-note-3: var(--vp-c-brand-3);
+  --vp-c-note-soft: var(--vp-c-brand-soft);
+}
+/* 以前的vp-c-brand已弃用 */
+
+:root {
+  /* hero标题渐变色 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+
+  /*hero logo背景渐变色 */
+  /* --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  --vp-home-hero-image-filter: blur(40px); */
+}
+
+/* 也可自行单独修改brand按钮 */
+/* :root {
+  --vp-button-brand-border: #F6CEEC;
+  --vp-button-brand-text: #F6CEEC;
+  --vp-button-brand-bg: #D939CD;
+
+  --vp-button-brand-hover-border: #F6CEEC;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: #D939CD;
+
+  --vp-button-brand-active-border: #F6CEEC;
+} */
+ /* H1标题颜色 */
+.VPDoc h1 {
+  background: -webkit-linear-gradient(10deg, #bd34fe 5%, #e43498 15%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* 链接下划线 */
+.vp-doc a {
+    text-decoration: none;
+}
+/* VPFeatures 页卡悬浮效果 */
+.VPFeatures .items .item {
+  transition: transform 0.3s;
+}
+/* 页卡悬浮效果 */
+.VPFeatures .items .item:hover {
+  transform: translateY(-5px);
+  color: var(--vp-c-brand-1);
+
+}
+/* 暗黑模式下页卡悬浮效果 */
+.dark .VPFeatures .items .item:hover {
+  transform: translateY(-5px);
+  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 0 10px var(--vp-c-brand-1);
+  border-radius: 10px;
+  padding: 10px;
+}
+/* 目录页卡悬浮效果 */
+.item:hover {
+  transform: translate(-5px);
+  color: var(--vp-c-brand-1);
+  /* border-color: var(--vp-c-brand-1);
+  box-shadow: 0 0 10px var(--vp-c-brand-1);
+  border-radius: 10px; */
+ 
+}
+
+/* 
+ * 防止滚动条影响页面布局
+ * -------------------------------------------------------------------------- */
+
+/* 强制显示滚动条，避免内容跳动 */
+html {
+  overflow-y: scroll;
+}
+
+
+/* 确保主容器不会因滚动条出现而改变宽度 */
+.VPApp {
+  min-height: 100vh;
+}
+
+/* 防止水平滚动条 */
+body {
+  overflow-x: hidden;
+}

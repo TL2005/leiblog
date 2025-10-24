@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "devDependencies": {
+    "nprogress-v2": "^1.1.10",
+    "vitepress": "2.0.0-alpha.12",
+    "vitepress-markdown-timeline": "^1.2.2",
+    "vitepress-sidebar": "^1.33.0",
+    "vue": "^3.5.22"
+  },
+  "scripts": {
+    "blog:dev": "vitepress dev blog --host",
+    "blog:build": "vitepress build blog",
+    "blog:preview": "vitepress preview blog"
+  },
+  "dependencies": {
+    "@vicons/utils": "^0.1.4",
+    "@waline/client": "^3.7.0"
+  }
+}
