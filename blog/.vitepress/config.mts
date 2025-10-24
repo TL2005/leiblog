@@ -1,5 +1,9 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar';
+import { 
+  GitChangelog, 
+  GitChangelogMarkdownSection, 
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 const vitepressSidebarOptions = {
   /* Options... */
@@ -8,6 +12,15 @@ const vitepressSidebarOptions = {
 //import { devDependencies } from '../../package.json'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    plugins: [
+      GitChangelog({
+        // 填写您的仓库链接
+        repoURL: () => 'https://github.com/TL2005/leiblog',
+      }),
+      GitChangelogMarkdownSection(),
+    ],
+  },
   lang: 'zh-CN',
   title: "leiblog",
   description: "lei的技术博客",

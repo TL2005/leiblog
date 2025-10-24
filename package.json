@@ -1,6 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "devDependencies": {
+    "@nolebase/vitepress-plugin-git-changelog": "^2.18.2",
     "nprogress-v2": "^1.1.10",
     "vitepress": "2.0.0-alpha.12",
     "vitepress-markdown-timeline": "^1.2.2",
