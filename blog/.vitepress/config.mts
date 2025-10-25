@@ -33,6 +33,24 @@ export default defineConfig({
   description: "lei的技术博客",
   head: [
     ['link',{ rel: 'icon', href: 'https://pic.imgdd.cc/item/68f4d03945440b5a918e36dc.png'}],
+    ['style', {}, `
+      html, body {
+        background-image: url('/bg.svg') !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        background-size: 50% !important;
+        background-attachment: fixed !important;
+      }
+      @media (max-width: 1200px) {
+        html, body { background-size: 60% !important; }
+      }
+      @media (max-width: 768px) {
+        html, body { background-size: 80% !important; }
+      }
+      @media (max-width: 480px) {
+        html, body { background-size: 100% !important; }
+      }
+    `]
   ],
   lastUpdated: true, //首次配置不会立即生效，需git提交后爬取时间戳
   markdown: {

@@ -2,9 +2,11 @@
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme'
 import NotFound from '../components/NotFound.vue'
+import GlobalBackground from '../components/GlobalBackground.vue'
 </script>
 
 <template>
+  <GlobalBackground />
   <DefaultTheme.Layout>
     <!-- 传递所有插槽内容 -->
     <template #nav-bar-content-after>
@@ -22,5 +24,6 @@ import NotFound from '../components/NotFound.vue'
     <template #not-found>
       <NotFound />
     </template>
+      
   </DefaultTheme.Layout>
 </template>
