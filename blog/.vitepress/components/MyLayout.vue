@@ -1,6 +1,7 @@
 <!-- .vitepress/components/MyLayout.vue -->
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme'
+import NotFound from '../components/NotFound.vue'
 </script>
 
 <template>
@@ -17,6 +18,9 @@ import DefaultTheme from 'vitepress/theme'
     </template>
     <template #doc-after>
       <slot name="doc-after" />
+    </template>
+    <template #not-found>
+      <NotFound />
     </template>
   </DefaultTheme.Layout>
 </template>

@@ -6,6 +6,7 @@ import MyLayout from "../components/MyLayout.vue";
 import backtotop from "../components/Backtotop.vue";
 import update from "../components/Update.vue"
 import WalineComment from '../components/WalineComment.vue'
+import NotFound from '../components/NotFound.vue'
 
 // 导入 Git 变更日志插件
 import {
@@ -89,5 +90,6 @@ export default {
                 })
             }
         })
-    }
+    },
+    NotFound: NotFound
 }
