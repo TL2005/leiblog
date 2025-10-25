@@ -4,6 +4,7 @@
     "@nolebase/vitepress-plugin-git-changelog": "^2.18.2",
     "@nolebase/vitepress-plugin-page-properties": "^2.18.2",
     "nprogress-v2": "^1.1.10",
+    "sass-embedded": "^1.93.2",
     "vitepress": "2.0.0-alpha.12",
     "vitepress-markdown-timeline": "^1.2.2",
     "vitepress-sidebar": "^1.33.0",
